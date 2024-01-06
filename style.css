@@ -1,0 +1,32 @@
+.card {
+  perspective: 1000px;
+  background-color: #000;
+}
+
+.card .card-img-top {
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  object-fit: cover;
+  width: auto;
+  height: 30rem;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.card.flipped img {
+  transform: rotateY(-180deg);
+}
+.card-back-flip {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+body {
+  background-image: url("https://media.istockphoto.com/id/519139110/video/party-floor-lights-dark-loopable-background.jpg?s=640x640&k=20&c=JzGnLzTx15y5T_4sB_C_FVDCS5Ox8g9aJzn3QlV1dGM=");
+  background-size:cover;
+  background-repeat: no-repeat;
+}
